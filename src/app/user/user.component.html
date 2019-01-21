@@ -1,0 +1,14 @@
+<hr>
+<label>Username: </label>
+<br>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="username"
+>
+<p>Username is: {{username}}</p>
+
+<button
+  class="btn btn-primary"
+  [disabled]="isEmptyUserName()"
+  (click)="resetInput()">Reset Username</button>
